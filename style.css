@@ -10,9 +10,31 @@
     --cor1:#31333b;
     --cor2:#c5c7d1;
     --cor3:#b48b1a;
-    --cor3:#424961;
+    --cor4:#424961;
 }
-
 header{
     background-color: var(--cor1);
+    height: 60px;
+    color: white;
+    align-items: center;
+}
+header>div{
+    display: flex;
+    width: 95%;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+}
+
+header>div>nav>a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    
+}
+header>div>nav>a:hover{
+    text-decoration: underline;
+    background-color: var(--cor4);
+    
 }
