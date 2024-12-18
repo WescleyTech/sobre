@@ -14,27 +14,60 @@
 }
 header{
     background-color: var(--cor1);
-    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
     color: white;
     align-items: center;
 }
-header>div{
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+.menu li a:hover{
+    background-color: var(--cor4);
+    transition-duration: .4s;
+    border-radius: 15px;
+}
+.sobre{
+    background-color: var(--cor4);
+}
+.sobre{
+    display: flex;
+}
+.sobre div{
+    flex-direction: column;
+
+}
+.sobre p{
+    margin-top: 40px;
+    margin-left: 60px;
+    color: white;
+}
+.sobre p strong{
+    font-size: 1.5rem;
+    color: var(--cor3);
+}
+.sobre button{
+    margin-left: 1p;
+    margin-top: 150px;
+
+}
+/*header>div{
     display: flex;
     width: 95%;
     height: 100%;
     align-items: center;
     margin: auto;
     justify-content: space-between;
-}
-
-header>div>nav>a{
-    text-decoration: none;
-    color: white;
-    margin-left: 30px;
-    
-}
-header>div>nav>a:hover{
-    text-decoration: underline;
-    background-color: var(--cor4);
-    
 }
